@@ -1,0 +1,153 @@
+<%- include ('partials/header') %>
+
+<style>
+    h1 {
+        text-align: center;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 50px;
+        text-shadow: currentColor;
+        color: #ff3232;
+    }
+
+    h1 {
+        text-decoration: none;
+        text-align: center;
+        font-weight: 800;
+        letter-spacing: 3px;
+        font-family: sans-serif;
+        margin-right: 90px;
+        font-size: 70px;
+        text-shadow: currentColor;
+        color: #ff3232;
+    }
+
+    #dosra {
+        display: none;
+    }
+
+    #one {
+        display: none;
+    }
+</style>
+
+<h1> COGNO-METER </h1>
+
+<div id="first">
+
+
+    <div class="card" class="first" style="width: 18rem;height: 0; margin-top: 5%;">
+        <img src="fastfeed.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class=" card-title" style="color: white;">Fast-Feed</h5>
+            <p class="card-text" style="color: lightgray;">-Improve decision making <br>
+                -Pattern recognation <br>
+                -Fast visual Reaction
+            </p>
+            <a href="/feedAbout" class="btn btn-primary" style="margin-top: 20px; width: 40%; float: left;">About</a>
+            <a href="/fastfeed" class="btn btn-danger" style="margin-top: 20px; float: right; width: 50%;">Play</a>
+        </div>
+    </div>
+
+    <div class="card" class="first" style="width: 18rem;height: 0;margin-bottom: 2%; margin-left: 35%;">
+        <img src="ColourBreak.PNG" class="card-img-top" alt="..." height="240px">
+        <div class="card-body">
+            <h5 class=" card-title" style="color: white;">Colour Break</h5>
+            <p class="card-text" style="color: lightgray;">-Improve Recognising colours<br>
+                -Hand Eye Co-ordination <br>
+                -Fast visual Reaction
+            </p>
+            <a href="/colorAbout" class="btn btn-primary" style="margin-top: 20px; width: 40%; float: left;">About</a>
+            <a href="/colorBreak" class="btn btn-danger" style="margin-top: 20px; float: right; width: 50%;">Play</a>
+        </div>
+    </div>
+
+</div>
+
+<div id="dosra">
+
+    <div class="card second" style="width: 18rem;height: 0;margin-top: 5%; margin-left: 5%;">
+        <img src="flow.PNG" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class=" card-title" style="color: white;">Flow Free</h5>
+            <p class="card-text" style="color: lightgray;">-Improve working memory <br>
+                -Improve Short Memory <br>
+                -Fast visual Reaction
+            </p>
+            <a href="/feedAbout" class="btn btn-primary" style="margin-top: 20px; width: 40%; float: left;">About</a>
+            <a href="/flowfree" class="btn btn-danger" style="margin-top: 20px; float: right; width: 50%;">Play</a>
+        </div>
+    </div>
+    <div class="card" class="first" style="width: 18rem;height: 0; margin-left: 35%;">
+        <img src="Decode.PNG" class="card-img-top" alt="..." height="240px">
+        <div class="card-body">
+            <h5 class=" card-title" style="color: white;">Decode</h5>
+            <p class="card-text" style="color: lightgray;">-Improve Recognising colours<br>
+                -Hand Eye Co-ordination <br>
+                -Fast visual Reaction
+            </p>
+            <a href="/colorAbout" class="btn btn-primary" style="margin-top: 20px; width: 40%; float: left;">About</a>
+            <a href="/colorBreak" class="btn btn-danger" style="margin-top: 20px; float: right; width: 50%;">Play</a>
+        </div>
+    </div>
+
+
+</div>
+<button id="one" class="btn btn-danger" style="background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: sans-serif; 
+     border: transparent; margin-top: 32%; margin-left: 25%;" onclick="Reveal()">
+    Load More
+</button>
+
+<button id="two" class="btn btn-danger" style="background: transparent; border: transparent; 
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    margin-top: 32%; margin-left: 25%;" onclick="SecondReveal()">
+    Load More
+</button>
+<!-- 
+<div class="card" style="width: 18rem;height: 0;">
+    <img src="fastfeed.png" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class=" card-title" style="color: white;">Flow Free</h5>
+        <p class="card-text" style="color: lightgray;">-Puzzle <br>
+            -Rational Problem Solving <br>
+            -Critical Thinking
+        </p>
+        <a href="/feedAbout" class="btn btn-primary" style="margin-top: 20px; width: 40%; float: left;">About</a>
+        <a href="/fastfeed" class="btn btn-danger" style="margin-top: 20px; float: right; width: 50%;">Play</a>
+    </div>
+</div> -->
+<script>
+    function Reveal() {
+        // document.getElementsByClassName('second')
+
+
+
+        document.getElementById('dosra').style.display = 'block';
+        document.getElementById('first').style.display = "none";
+
+        document.getElementById('one').style.display = "none";
+        document.getElementById('two').style.display = "block";
+    }
+
+
+
+
+
+
+
+
+    function SecondReveal() {
+        document.getElementById('first').style.display = "block";
+        document.getElementById('dosra').style.display = "none";
+        document.getElementById('one').style.display = "block";
+        document.getElementById('two').style.display = "none";
+    }
+
+</script>

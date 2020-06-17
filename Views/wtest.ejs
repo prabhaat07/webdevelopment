@@ -1,0 +1,41 @@
+<%- include ('partials/header') %>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+
+
+<style>
+    #myChart {
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+</style>
+
+<canvas id="myChart" width="500%" height="400%"></canvas>
+
+
+<script>
+
+    //'rgb(255, 99, 132)'
+
+    var pdata = "<%= dataAraay %>";
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'line',
+
+        // The data for our dataset
+        data: {
+            labels: ['April', 'May', 'June', 'July', 'August', 'September'],
+            datasets: [{
+                label: 'Performace',
+
+                borderColor: '#add3e6',
+                data: pdata
+            }]
+        },
+
+        // Configuration options go here
+        options: {
+            responsive: false
+        }
+    });
+</script>

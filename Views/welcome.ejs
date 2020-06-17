@@ -1,0 +1,163 @@
+<%- include ('partials/header') %>
+<style>
+    h1 {
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 50px;
+        text-shadow: currentColor;
+        color: #ff3232;
+    }
+
+    body {
+
+        background-image: url('Ybulb.jpg');
+        background-repeat: no-repeat;
+        background-size: cover !important;
+    }
+
+    /*
+    color: #ffef99;
+   animation text
+   */
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+    }
+
+
+
+    .container {
+
+        position: absolute;
+        left: 50%;
+        top: 75%;
+
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    .container span {
+
+        display: block;
+    }
+
+    .text1 {
+        color: white;
+        font-size: 50px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+        background: transparent;
+        position: relative;
+        animation: text 3s 1;
+    }
+
+    .text2 {
+        font-size: 25px;
+        font-family: cursive;
+        color: #ffef99;
+
+        animation: text2 3s 1;
+    }
+
+    @keyframes text {
+        0% {
+            color: transparent;
+            margin-bottom: -40px;
+        }
+
+        /* 30% {
+
+            color: white;
+            color: transparent;
+
+            margin-bottom: -40px;
+        } */
+
+        25% {
+            color: transparent;
+            letter-spacing: 8px;
+            margin-bottom: -40px;
+
+        }
+    }
+
+    @keyframes text2 {
+        0% {
+            color: transparent;
+            margin-left: 30%;
+        }
+
+        20% {
+            visibility: hidden;
+        }
+
+
+
+        25% {
+            visibility: hidden;
+        }
+
+        20% {
+            visibility: hidden;
+        }
+
+        100% {
+
+            visibility: hidden;
+            color: transparent;
+        }
+
+    }
+
+    .getStarted {
+        border: 0;
+        background-color: red;
+        padding: 0%;
+        height: 30px;
+        width: 20%;
+        margin-top: 30%;
+        margin-left: 23%;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+    }
+
+    .welcomeText {
+        margin-top: 30%;
+        margin-right: 10%;
+        letter-spacing: 8px;
+        font-size: 60px;
+        font-family: sans-serif;
+    }
+</style>
+
+<!-- class="shadow-lg p-3 mb-5 bg-white rounded" -->
+<div>
+
+    <h1 class="welcomeText" style="margin-top: 2%; ">
+        <strong>
+
+            COGNO-METER
+        </strong>
+    </h1>
+
+</div>
+
+<div class="container">
+    <span class="text1"> PLAY AND IMPROVE</span>
+    <!-- <span class="text2">Play And improve your cognitive skill.<br> Fast Paced, Inchance Decision Making </span> -->
+</div>
+
+<form action="/play" method="GET">
+    <button class="getStarted" style="color: white;  "> <strong>
+            <span>
+                GLHF
+
+            </span>
+
+        </strong>
+        <span style="float: right; font-weight: bold;"> ) </span>
+    </button>
+</form>

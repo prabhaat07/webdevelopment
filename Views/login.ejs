@@ -1,0 +1,79 @@
+<%- include ('partials/header') %>
+
+<style>
+  h1 {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 50px;
+    text-shadow: currentColor;
+    color: #ff3232;
+  }
+
+  .left-box {
+    margin-top: 20%;
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+
+  div {
+    background-color: transparent;
+  }
+
+  .welcomeText {
+    margin-top: 30%;
+    margin-right: 10%;
+    letter-spacing: 8px;
+    font-size: 60px;
+    font-family: sans-serif;
+  }
+</style>
+<div>
+
+  <h1 class="welcomeText" style="margin-top: 2%; ">
+    <strong>
+
+      COGNO-METER
+    </strong>
+  </h1>
+
+</div>
+
+
+<div class="left-box">
+
+  <h2 style="color: white; margin-bottom: 10%;"> LOG-IN </h2>
+
+  <form action="/sclogin" method="POST">
+
+    <input id="user" type="text" name="username" placeholder="username"
+      style="background-color: transparent; color: white;" />
+
+    <input id="pass" type="password" name="password" placeholder="password"
+      style="background-color: transparent; color: white;" />
+
+    <button type="submit" class="btn btn-danger"
+      style="width: 180px; font-weight: 900; font-size: x-large; letter-spacing: 3px; ">Login</button>
+
+  </form>
+  <!--  
+  -->
+</div>
+
+<div style="margin-left: 7%; margin-top:13.5% ;">
+  <span class="t1" style="font-size: 25px; font-weight: 700; 
+                            font-family: sans-serif; letter-spacing: 3px; "> NOT REGISTERED? </span> <br>
+  <p class="t2" style="margin-top: 21px; color: white;"> Click Below To Join Our Awesome <br>
+    Community Of Gamers </p>
+
+  <form action="/register" method="GET">
+
+    <button type="submit" class="btn btn-danger" style="
+    letter-spacing: 3px;
+    font-weight: 900;
+    font-size: x-large;
+     margin-top: 2%;
+     margin-left: 0%;
+      width: 15%;
+      ">Register</button>
+  </form>
+</div>

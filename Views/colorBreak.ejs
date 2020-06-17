@@ -1,0 +1,29 @@
+<%- include ('partials/header') %>
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | sudikshaGame</title>
+    <link rel="shortcut icon" href="ColourBreak_TemplateData/favicon.ico">
+    <link rel="stylesheet" href="ColourBreak_TemplateData/style.css">
+    <script src="ColourBreak_TemplateData/UnityProgress.js"></script>
+    <script src="ColourBreak_Build/UnityLoader.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "ColourBreak_Build/ColourBreak_Build.json", { onProgress: UnityProgress });
+    </script>
+</head>
+
+<body>
+    <div class="webgl-content">
+        <div id="gameContainer" style="width: 960px; height: 600px"></div>
+        <div d="myTextInputReceiver" contentEditable="true"></div>
+        <div class="footer">
+            <div class="title">sudikshaGame</div>
+        </div>
+    </div>
+    <a style="margin-top:40%; margin-left: 50%;" href="/play" class="btn btn-danger"> Go Back</a>
+</body>
+
+</html>
